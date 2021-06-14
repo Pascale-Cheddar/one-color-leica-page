@@ -1,0 +1,47 @@
+.features-container {
+  background: radial-gradient(#525252, #131313);
+  position: relative;
+  z-index: 0; // damit die wave hinter allen Objekten zu sehen ist.
+  overflow: hidden; //damit die Welle nicht die ganze Seite nach unten einnimmt.und sie Stretcht
+  .wave {
+    position: absolute;
+    left: 0;
+    bottom: -12%;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.features {
+  min-height: 90vh; //damit definieren wir die Höhe des Hintergrunds.
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+
+    .card {
+      margin: 0rem 10rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      border-radius: 2%;
+      overflow: hidden; //hidden damit die property: border-radius greift
+      h4 {
+        margin: 3rem 0rem;
+      }
+      p {
+        padding: 2rem;
+        color: #e5e5e5;
+      }
+      img {
+        object-fit: cover;
+        border-radius: 10%;
+      }
+    }
+  }
+}
